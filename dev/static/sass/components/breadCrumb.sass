@@ -1,0 +1,24 @@
+.breadCrumb
+  padding-top: 60px
+  margin-bottom: 60px
+  &__list
+    display: flex
+    border-bottom: 1px solid #ebebeb
+    padding-bottom: 10px
+  &__item
+    margin-right: 15px
+    &:last-child
+      margin-right: 0
+    &+li
+      &:before
+        content: '/\00a0'
+        margin-right: 15px
+  &__link
+    font-size: 14px
+    transition: .3s
+    &:hover
+      color: $mainColor
+      text-decoration: none
+    &-active
+      color: $mainColor
+

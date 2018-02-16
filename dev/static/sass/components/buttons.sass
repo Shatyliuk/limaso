@@ -1,0 +1,46 @@
+.menuButton
+  display: none
+  position: absolute
+  width: 60px
+  height: 60px
+  transition: all 0.5s cubic-bezier(.7,0,.3,1)
+  cursor: pointer
+  right: 10px
+  &__line
+    display: block
+    position: absolute
+    height: 8px
+    width: 100%
+    border-radius: 5px
+    background: $mainColor
+    opacity: 1
+    left: 0
+    transform: rotate(0deg)
+    transition: .4s cubic-bezier(.7,0,.3,1)
+    &:nth-child(1)
+      top: 5px
+      transform-origin: left center
+    &:nth-child(2)
+      top: 20px
+      transform-origin: left center
+    &:nth-child(3)
+      top: 35px
+      transform-origin: left center
+  &.open
+    transform: rotate(90deg) translateY(10%)
+    position: fixed
+    z-index: 9999
+    top: 45px
+    right: 35px
+    .menuButton__line
+      &:nth-child(1)
+        transform: rotate(45deg)
+        top: -19px
+        left: 6px
+      &:nth-child(2)
+        width: 0
+        opacity: 0
+      &:nth-child(3)
+        transform: rotate(-45deg)
+        top: 22px
+        left: 6px

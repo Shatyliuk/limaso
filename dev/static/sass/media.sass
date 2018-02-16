@@ -1,0 +1,127 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  header
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .header
+    justify-content: space-around
+  .mainLogo
+    padding-left: 0
+  .mainNavigation
+    transition: all .3s ease
+    transform: translateY(-100%)
+    background-color: #ccc
+    text-align: center
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    padding-top: 50px
+    z-index: 9999
+    &-open
+      transform: translateY(0)
+    &__list
+      flex-direction: column
+      transform: translateY(50%)
+    &__item
+      margin-bottom: 20px
+      font-size: 1.5em
+
+  .menuButton
+    display: inline-block
+  .accountIcons
+    &__icon
+      font-size: 2em
+  .sidebar
+    margin-bottom: 35px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .header
+    justify-content: start
+    padding-left: 15px
+  .accountIcons
+    width: 100%
+    justify-content: center
+  .bannerInformation
+    &__paragraph
+      font-size: 40px
+      &-tiny
+        font-size: 18px
+  .contacts
+    margin-bottom: 35px
+    &__cards
+      justify-content: center
+  .stores,
+  .clients,
+  .extra
+    text-align: center
+    margin-bottom: 35px
+
+  .modalForm
+    &__wrapper
+      padding-right: 60px
+      padding-top: 40px
+    &__cards
+      flex-direction: column
+    &__card
+      &-top
+        margin-bottom: 25px
+      &-bottom
+        position: relative
+        width: 100%
+        top: 0
+        right: 0
+        left: 0
+        padding-bottom: 70px
+    &__close
+      &:before,
+      &:after
+        top: -20px
+        right: -50px
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .mainLogo
+    margin-right: 35px
+  .accountIcons
+    justify-content: start
+    &__icon
+      font-size: 1.5em
+      margin-right: 20px
+  .bannerInformation
+    &__paragraph
+      font-size: 24px
+      &-tiny
+        font-size: 14px
+  .menuButton
+    width: 45px
+    &__line
+      height: 5px
+      &:nth-child(2)
+        top: 15px
+      &:nth-child(3)
+        top: 25px
+    &.open
+      .menuButton__line
+        &:nth-child(3)
+          top: 12px
+  .modalForm
+    &__wrapper
+      padding: 30px
+    &__close
+      &:before,
+      &:after
+        top: -15px
+        right: -25px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  header
+
+/**/

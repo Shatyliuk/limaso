@@ -1,0 +1,110 @@
+extends ../layout/main
+block variables
+    - var title = 'Index'
+block content
+    section.sectionBanner
+        .container
+            .bannerInformation
+                p.bannerInformation__paragraph изысканный дизайн
+                p.bannerInformation__paragraph.bannerInformation__paragraph-mainColor теплых покрывал
+                p.bannerInformation__paragraph.bannerInformation__paragraph-tiny.bannerInformation__paragraph-margin Смотрите и выбирайте, который вам по душе
+                a(href='#').bannerInformation__button Смотреть
+    .breadCrumb
+        .container
+            ul.breadCrumb__list
+                li.breadCrumb__item
+                    a(href='#').breadCrumb__link Главная
+                li.breadCrumb__item
+                    a(href='#').breadCrumb__link Каталог
+                li.breadCrumb__item
+                    a(href='#').breadCrumb__link.breadCrumb__link-active Покрывала
+    .mainContent
+        .container
+            .row
+                include ../modules/aside
+                main.products.col-lg-9
+                    .sort
+                        a(href='#' id='sortButton').sort__header Сортировать по
+                            i.sort__arrow.fas.fa-angle-down
+                        .sort__block(id='sortBlock')
+                            ul.sort__list
+                                li.sort__item
+                                    a(href='#' id='sortUp').sort__link Цене (высокая > низкая)
+                                li.sort__item
+                                    a(href='#' id='sortDown').sort__link Цене (низкая > высокая)
+                    .products
+                        .row(id='productsWrap')
+                            .productItem.col-lg-4.col-md-6.productItem-new
+                                img.productItem__img(src='static/img/plaid.png' alt='плед')
+                                .productItem__info
+                                    .productItem__text
+                                        span.productItem__span Плед "Клеточка" LT1070
+                                        span.productItem__span.productItem__span-accent 170.00грн
+                                    .productItem__cart
+                                        i.productItem__icon.fas.fa-shopping-cart
+                            .productItem.col-lg-4.col-md-6
+                                img.productItem__img(src='static/img/coverpl.png' alt='плед')
+                                .productItem__info
+                                    .productItem__text
+                                        span.productItem__span Покрывало PL03
+                                        span.productItem__span.productItem__span-accent 5846.00грн
+                                    .productItem__cart
+                                        i.productItem__icon.fas.fa-shopping-cart
+                            .productItem.col-lg-4.col-md-6
+                                img.productItem__img(src='static/img/coverplg.png' alt='плед')
+                                .productItem__info
+                                    .productItem__text
+                                        span.productItem__span Покрывало гобеленовое PLG03
+                                        span.productItem__span.productItem__span-accent 170.00грн
+                                    .productItem__cart
+                                        i.productItem__icon.fas.fa-shopping-cart
+
+                            .productItem.col-lg-4.col-md-6
+                                img.productItem__img(src='static/img/coverpl.png' alt='плед')
+                                .productItem__info
+                                    .productItem__text
+                                        span.productItem__span Покрывало PL03
+                                        span.productItem__span.productItem__span-accent 5846.00грн
+                                    .productItem__cart
+                                        i.productItem__icon.fas.fa-shopping-cart
+                            .productItem.col-lg-4.col-md-6
+                                img.productItem__img(src='static/img/coverplg.png' alt='плед')
+                                .productItem__info
+                                    .productItem__text
+                                        span.productItem__span Покрывало гобеленовое PLG03
+                                        span.productItem__span.productItem__span-accent 170.00грн
+                                    .productItem__cart
+                                        i.productItem__icon.fas.fa-shopping-cart
+                            .productItem.col-lg-4.col-md-6.productItem-new
+                                img.productItem__img(src='static/img/plaid.png' alt='плед')
+                                .productItem__info
+                                    .productItem__text
+                                        span.productItem__span Плед "Клеточка" LT1070
+                                        span.productItem__span.productItem__span-accent 170.00грн
+                                    .productItem__cart
+                                        i.productItem__icon.fas.fa-shopping-cart
+
+                            .productItem.col-lg-4.col-md-6
+                                img.productItem__img(src='static/img/coverpl.png' alt='плед')
+                                .productItem__info
+                                    .productItem__text
+                                        span.productItem__span Покрывало PL03
+                                        span.productItem__span.productItem__span-accent 5846.00грн
+                                    .productItem__cart
+                                        i.productItem__icon.fas.fa-shopping-cart
+                            .productItem.col-lg-4.col-md-6.productItem-new
+                                img.productItem__img(src='static/img/plaid.png' alt='плед')
+                                .productItem__info
+                                    .productItem__text
+                                        span.productItem__span Плед "Клеточка" LT1070
+                                        span.productItem__span.productItem__span-accent 170.00грн
+                                    .productItem__cart
+                                        i.productItem__icon.fas.fa-shopping-cart
+                            .productItem.col-lg-4.col-md-6
+                                img.productItem__img(src='static/img/coverplg.png' alt='плед')
+                                .productItem__info
+                                    .productItem__text
+                                        span.productItem__span Покрывало гобеленовое PLG03
+                                        span.productItem__span.productItem__span-accent 170.00грн
+                                    .productItem__cart
+                                        i.productItem__icon.fas.fa-shopping-cart

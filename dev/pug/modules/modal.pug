@@ -1,0 +1,43 @@
+form(id='form').modalForm
+    .modalForm__wrapper
+        a(href='#' id='modalClose').modalForm__close
+        h3.modalForm__header Данные банковской карты
+        .modalForm__cards
+            .modalForm__card.modalForm__card-top
+                div(id='cardNumber').modalForm__number
+                    input(type='text' maxlength='4' name='firstNumber' ).modalForm__input
+                    input(type='text' maxlength='4' name='secondNumber' ).modalForm__input
+                    input(type='text' maxlength='4' name='thirdNumber' ).modalForm__input
+                    input(type='text' maxlength='4' name='fourthNumber' ).modalForm__input
+                h4 Срок действия
+                .modalForm__date
+                    .modalForm__month
+                        select(name='month')
+                            option(value='01' selected) 01
+                            option(value='02') 02
+                            option(value='03') 03
+                            option(value='04') 04
+                            option(value='05') 05
+                            option(value='06') 06
+                            option(value='07') 07
+                            option(value='09') 08
+                            option(value='10') 10
+                            option(value='11') 11
+                            option(value='12') 12
+                    .modalForm__year
+                        select(name='year')
+                            option(value='2015' selected) 2015
+                            option(value='2016') 2016
+                            option(value='2017') 2017
+                            option(value='2018') 2018
+                            option(value='2019') 2019
+                            option(value='2020') 2020
+                            option(value='2021') 2021
+                .modalForm__owner
+                    input(type='text' name='cardHolder' placeholder='Держатель карты')
+            .modalForm__card.modalForm__card-bottom
+                .modalForm__line
+                .modalForm__cvv
+                    label Код CVV/CVV2
+                    input(type='text' name='cvvNumber' maxlength='3')
+        input(id='submitButton' type='submit').modalForm__button
