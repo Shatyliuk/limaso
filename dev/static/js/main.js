@@ -42,13 +42,13 @@ $(document).ready(function () {
         var scrollTop = $(this).scrollTop();
 
         if (scrollTop > yPos + height) {
-            $navbar.addClass("header-sticky").animate({
+            $navbar.animate({
                 top: 0,
                 paddingTop: 15,
                 paddingBottom: 5
             });
         } else if (scrollTop <= yPos) {
-            $navbar.removeClass("header-sticky").clearQueue().animate({
+            $navbar.clearQueue().animate({
                 paddingTop: 45,
                 paddingBottom: 25
             });
