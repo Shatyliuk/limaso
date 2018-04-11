@@ -58,7 +58,7 @@ gulp.task('js:dev', function () {
 });
 
 gulp.task('js:build', function () {
-    return gulp.src(['./dev/static/js/libs/*.min.js', './dev/static/js/*.js'])
+    return gulp.src(['./dev/static/js/*.js'])
         // .pipe(concat('libs.min.js'))
         .pipe(uglifyjs())
         .pipe(gulp.dest('./build/static/js/'))
